@@ -1,0 +1,3 @@
+to jest linika 1
+to jest jakas linika 2
+to jest kolejna linika w tym pliku

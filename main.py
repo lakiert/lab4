@@ -101,38 +101,38 @@
 
 
 # zad6
-print('zad6 \n')
-class Robaczek:
-    x = 0
-    y = 0
-    krok = 1
-
-    def __init__(self, x = 0, y = 0, krok = 1):
-        self.x = x
-        self.y = y
-        self.krok = krok
-
-    def idz_w_gore(self, ile_krokow):
-        self.y += (ile_krokow * self.krok)
-
-    def idz_w_dol(self, ile_krokow):
-        self.y -= (ile_krokow * self.krok)
-
-    def idz_w_lewo(self, ile_krokow):
-        self.x -= (ile_krokow * self.krok)
-
-    def idz_w_prawo(self, ile_krokow):
-        self.x += (ile_krokow * self.krok)
-
-    def pokaz_gdzie_jestes(self):
-        print('(', self.x, ',', self.y, ')')
-
-robaczek = Robaczek()
-robaczek.idz_w_prawo(10)
-robaczek.idz_w_lewo(6)
-robaczek.idz_w_gore(5)
-robaczek.idz_w_dol(3)
-robaczek.pokaz_gdzie_jestes()
+# print('zad6 \n')
+# class Robaczek:
+#     x = 0
+#     y = 0
+#     krok = 1
+#
+#     def __init__(self, x = 0, y = 0, krok = 1):
+#         self.x = x
+#         self.y = y
+#         self.krok = krok
+#
+#     def idz_w_gore(self, ile_krokow):
+#         self.y += (ile_krokow * self.krok)
+#
+#     def idz_w_dol(self, ile_krokow):
+#         self.y -= (ile_krokow * self.krok)
+#
+#     def idz_w_lewo(self, ile_krokow):
+#         self.x -= (ile_krokow * self.krok)
+#
+#     def idz_w_prawo(self, ile_krokow):
+#         self.x += (ile_krokow * self.krok)
+#
+#     def pokaz_gdzie_jestes(self):
+#         print('(', self.x, ',', self.y, ')')
+#
+# robaczek = Robaczek()
+# robaczek.idz_w_prawo(10)
+# robaczek.idz_w_lewo(6)
+# robaczek.idz_w_gore(5)
+# robaczek.idz_w_dol(3)
+# robaczek.pokaz_gdzie_jestes()
 
 
 

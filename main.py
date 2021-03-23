@@ -38,24 +38,108 @@
 
 
 # zad4
-print('zad4 \n')
-class NaZakupy:
-    nazwa_produktu = ''
-    ilosc = 0
-    jednostka_miary = ''
-    cena_jed = 0
+# print('zad4 \n')
+# class NaZakupy:
+#     nazwa_produktu = ''
+#     ilosc = 0
+#     jednostka_miary = ''
+#     cena_jed = 0
+#
+#     def __init__(self, nazwa_produktu, ilosc, jednostka_miary, cena_jed):
+#         self.nazwa_produktu = nazwa_produktu
+#         self.ilosc = ilosc
+#         self.jednostka_miary = jednostka_miary
+#         self.cena_jed = cena_jed
+#     def wyswietl_produkt(self):
+#         print(self.nazwa_produktu, self.ilosc, self.jednostka_miary, self.cena_jed)
+#     def ile_produktu(self):
+#         print(self.ilosc + ' ' + self.jednostka_miary)
+#     def ile_kosztuje(self):
+#         wynik = self.ilosc * self.cena_jed
+#         return wynik
 
-    def __init__(self, nazwa_produktu, ilosc, jednostka_miary, cena_jed):
-        self.nazwa_produktu = nazwa_produktu
-        self.ilosc = ilosc
-        self.jednostka_miary = jednostka_miary
-        self.cena_jed = cena_jed
-    def wyswietl_produkt(self):
-        print(self.nazwa_produktu, self.ilosc, self.jednostka_miary, self.cena_jed)
-    def ile_produktu(self):
-        print(self.ilosc + ' ' + self.jednostka_miary)
-    def ile_kosztuje(self):
-        wynik = self.ilosc * self.cena_jed
-        return wynik
+
+# zad5
+# print('zad5 \n')
+# class ciagi:
+#     wyrazy = [3, 4, 5]
+#     wyrazy_nowe2 = []
+#     a = 0
+#     # a1 = 0
+#     # roznica = 0
+#     # ilosc = 0
+#
+#     def wyswietl_dane(self):
+#         print(self.wyrazy)
+#     def pobierz_elementy(self, *a):
+#         wyrazy_nowe = [x for x in a]
+#         print(wyrazy_nowe)
+#
+#     def pobierz_parametry(self, a1, roznica, ilosc):
+#         self.a1 = a1
+#         self.roznica = roznica
+#         self.ilosc = ilosc
+#
+#     def policz_sume(self, *a):
+#         self.wyrazy_nowe2 = [x for x in a]
+#         suma = 0
+#         for x in self.wyrazy_nowe2:
+#             suma = suma+x
+#         print(suma)
+#
+#     def policz_elementy(self, *a):
+#         wyrazy3 = [x for x in a]
+#         print(len(wyrazy3))
+#
+#
+# ciagi = ciagi()
+# ciagi.wyswietl_dane()
+# ciagi.pobierz_elementy(13, 15, 16, 18, 19)
+# ciagi.pobierz_parametry(2, 2, 5)
+# ciagi.policz_sume(5,10,20)
+# ciagi.policz_elementy(6, 7, 8, 9, 0)
+
+
+# zad6
+print('zad6 \n')
+class Robaczek:
+    x = 0
+    y = 0
+    krok = 1
+
+    def __init__(self, x = 0, y = 0, krok = 1):
+        self.x = x
+        self.y = y
+        self.krok = krok
+
+    def idz_w_gore(self, ile_krokow):
+        self.y += (ile_krokow * self.krok)
+
+    def idz_w_dol(self, ile_krokow):
+        self.y -= (ile_krokow * self.krok)
+
+    def idz_w_lewo(self, ile_krokow):
+        self.x -= (ile_krokow * self.krok)
+
+    def idz_w_prawo(self, ile_krokow):
+        self.x += (ile_krokow * self.krok)
+
+    def pokaz_gdzie_jestes(self):
+        print('(', self.x, ',', self.y, ')')
+
+robaczek = Robaczek()
+robaczek.idz_w_prawo(10)
+robaczek.idz_w_lewo(6)
+robaczek.idz_w_gore(5)
+robaczek.idz_w_dol(3)
+robaczek.pokaz_gdzie_jestes()
+
+
+
+
+
+
+
+
 
 
